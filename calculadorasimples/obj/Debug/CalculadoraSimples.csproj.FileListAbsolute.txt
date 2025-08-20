@@ -1,0 +1,10 @@
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\bin\Debug\CalculadoraSimpels.exe.config
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\bin\Debug\CalculadoraSimpels.exe
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\bin\Debug\CalculadoraSimpels.pdb
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\obj\Debug\CalculadoraSimples.csproj.AssemblyReference.cache
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\obj\Debug\CalculadoraSimpels.frmCalculadoraSimples.resources
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\obj\Debug\CalculadoraSimpels.Properties.Resources.resources
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\obj\Debug\CalculadoraSimples.csproj.GenerateResource.cache
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\obj\Debug\CalculadoraSimples.csproj.CoreCompileInputs.cache
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\obj\Debug\CalculadoraSimpels.exe
+C:\Users\bryan.freis\source\repos\CalculadoraSimpels\obj\Debug\CalculadoraSimpels.pdb
