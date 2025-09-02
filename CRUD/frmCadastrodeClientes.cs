@@ -15,8 +15,8 @@ namespace CRUD
     {
 
         //Conexão Com o banco de dados MySql
-        MySqlConnection Conexão;
-        string data_source = "datasource=localhost; username=root; password=; database=db_cadastro"
+        MySqlConnection Conexao;
+        string data_source = "datasource=localhost; username=root; password=; database=db_cadastro";
         public frmCadastrodeClientes()
         {
             InitializeComponent();
@@ -45,15 +45,63 @@ namespace CRUD
                 {
                     MessageBox.Show("CPF inválido. Certifique-se de que o CPF tenha 11 digítos Numéricos.",
                                     "Validação",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Warning);
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Warning);
                     return; //Impede o prosseguimento se o CPF for inválido
                 }
+
+                //Cria conexão com banco de dados
+                Conexao = new MySqlConnection(data_source);
+                Conexao.Open();
+
+                //Comando SQL para inserir um novo cliente no banco de dados
+                MySqlCommand cmd = new MySqlCommand
+                {
+                    Connection = Conexao
+                };
+
+                cmd.Prepare();
+                cmd.CommandText = "INSERT INTO dadosdocliente(nomecompleto, nomesocial, email, cpf)" +
+                    "VALUES(@nomecompleto, @nomesocial, @email, @cpf)";
+
+                //Adiciona os parãmetros com os dados do formulário
+                cmd.Parameters.AddWithValue("@nomecompleto", txtNomeCompleto.Text.Trim());
+                cmd.Parameters.AddWithValue("@nomesocial", txtNomeSocial.Text.Trim());
+                cmd.Parameters.AddWithValue("@email", txtEmail.Text.Trim());
+                cmd.Parameters.AddWithValue("@cpf", cpf);
+
+                //Executa o comando de inserção no banco
+                cmd.ExecuteNonQuery();
+
+                //Executa o comando de inserção no banco
+                MessageBox.Show("Contato inserido com sucesso: ",
+                                "Sucesso",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+
             }
-            catch (Exception)
+            catch (MySqlException ex)
+            {
+                // Trata Erros relacionados ao Mysql
+                MessageBox.Show("Erro" + ex.Number + " ocorreu: " + ex.Message,
+                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            catch (Exception ex)
             {
 
-                throw;
+                // Trata erros de outros tipos não relacioanados ao Database
+                MessageBox.Show("Ocorreu: " + ex.Message,
+                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            finally 
+            {
+                //Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
+                if (Conexao != null && Conexao.State == ConnectionState.Open)
+                {
+                    Conexao.Close();
+                }
             }
         }
 
@@ -66,5 +114,6 @@ namespace CRUD
             // Verifica se o CPF tem exatamente 11 dígitos
             return cpf.Length == 11;
         }
+
     }
 }
