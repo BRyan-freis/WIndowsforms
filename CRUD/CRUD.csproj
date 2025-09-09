@@ -104,6 +104,9 @@
     <Compile Include="frmCadastrodeClientes.Designer.cs">
       <DependentUpon>frmCadastrodeClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="GradientSideBarPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadastrodeClientes.resx">

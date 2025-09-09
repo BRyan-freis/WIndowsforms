@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bryan.freis\\source\\repos\\calculadoraatividade\\calculadoraatividade.csproj",
+      "projectUniqueName": "C:\\Users\\bryan.freis\\Source\\Repos\\WIndowsforms\\calculadoraatividade\\calculadoraatividade.csproj",
       "projectName": "calculadoraatividade",
-      "projectPath": "C:\\Users\\bryan.freis\\source\\repos\\calculadoraatividade\\calculadoraatividade.csproj",
+      "projectPath": "C:\\Users\\bryan.freis\\Source\\Repos\\WIndowsforms\\calculadoraatividade\\calculadoraatividade.csproj",
       "packagesPath": "C:\\Users\\bryan.freis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bryan.freis\\source\\repos\\calculadoraatividade\\obj\\",
+      "outputPath": "C:\\Users\\bryan.freis\\Source\\Repos\\WIndowsforms\\calculadoraatividade\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

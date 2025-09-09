@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CRUD"
   ],
-  "SelectedNode": "\\calculadoraatividade.sln",
+  "SelectedNode": "\\CRUD\\frmCadastrodeClientes.cs",
   "PreviewInSolutionExplorer": false
 }
