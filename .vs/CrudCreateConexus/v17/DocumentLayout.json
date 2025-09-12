@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|c:\\users\\calebi.scosta\\source\\repos\\crudcreateconexus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\sidebargradient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{621ED11F-9EF1-4D7C-A696-5316F49B4E6C}|CrudCreateConexus.csproj|solutionrelative:sidebargradient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T14:54:48.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:55:41.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SidebarGradient.cs",
+              "DocumentMoniker": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\SidebarGradient.cs",
+              "RelativeDocumentMoniker": "SidebarGradient.cs",
+              "ToolTip": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\SidebarGradient.cs",
+              "RelativeToolTip": "SidebarGradient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:51:32.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\calebi.scosta\\source\\repos\\CrudCreateConexus\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:47:07.024Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
