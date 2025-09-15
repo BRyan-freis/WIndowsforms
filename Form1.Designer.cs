@@ -43,8 +43,8 @@
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.gradientPanel2 = new GradientPanel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,6 +53,8 @@
             this.txtConexus = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.tbControl.SuspendLayout();
             this.tbCadastro.SuspendLayout();
             this.tbConsulta.SuspendLayout();
@@ -165,6 +167,8 @@
             // 
             // tbConsulta
             // 
+            this.tbConsulta.Controls.Add(this.btnPesquisar);
+            this.tbConsulta.Controls.Add(this.txtBuscar);
             this.tbConsulta.Controls.Add(this.dgvClientes);
             this.tbConsulta.Location = new System.Drawing.Point(4, 22);
             this.tbConsulta.Name = "tbConsulta";
@@ -177,9 +181,9 @@
             // dgvClientes
             // 
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(64, 5);
+            this.dgvClientes.Location = new System.Drawing.Point(6, 56);
             this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.Size = new System.Drawing.Size(676, 199);
+            this.dgvClientes.Size = new System.Drawing.Size(790, 148);
             this.dgvClientes.TabIndex = 0;
             this.dgvClientes.VirtualMode = true;
             // 
@@ -214,19 +218,6 @@
             this.gradientPanel2.Size = new System.Drawing.Size(995, 73);
             this.gradientPanel2.TabIndex = 5;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(101, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 39);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "nexus";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -239,6 +230,19 @@
             this.label5.Size = new System.Drawing.Size(37, 39);
             this.label5.TabIndex = 7;
             this.label5.Text = "o";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(101, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 39);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "nexus";
             // 
             // panel1
             // 
@@ -333,6 +337,23 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Fluxo de Usuários";
             // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(6, 18);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(155, 20);
+            this.txtBuscar.TabIndex = 1;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(183, 14);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(89, 24);
+            this.btnPesquisar.TabIndex = 2;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
             // frmCadastrodeClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,6 +371,7 @@
             this.tbCadastro.ResumeLayout(false);
             this.tbCadastro.PerformLayout();
             this.tbConsulta.ResumeLayout(false);
+            this.tbConsulta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.gradientPanel2.ResumeLayout(false);
             this.gradientPanel2.PerformLayout();
@@ -384,6 +406,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }
 

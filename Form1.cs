@@ -157,7 +157,10 @@ namespace CrudCreateConexus
                 }
          }
 
-       
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM dadosdocliente WHERE idcliente LIKE @q OR nomecompleto LIKE @q OR nomesocial LIKE @q ORDER BY idcliente DESC";
+        }
     }
 }
 
