@@ -94,7 +94,7 @@
             this.gradientPanel2.Location = new System.Drawing.Point(-4, -9);
             this.gradientPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(995, 74);
+            this.gradientPanel2.Size = new System.Drawing.Size(995, 81);
             this.gradientPanel2.TabIndex = 5;
             // 
             // label5
@@ -105,7 +105,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(48, 24);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 45);
+            this.label5.Size = new System.Drawing.Size(191, 57);
             this.label5.TabIndex = 7;
             this.label5.Text = "Conexus";
             // 
@@ -127,10 +127,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(592, 37);
+            this.label4.Location = new System.Drawing.Point(592, 40);
             this.label4.Margin = new System.Windows.Forms.Padding(40, 20, 0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 21);
+            this.label4.Size = new System.Drawing.Size(109, 28);
             this.label4.TabIndex = 5;
             this.label4.Text = "Sobre Nós";
             // 
@@ -141,10 +141,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(520, 37);
+            this.label3.Location = new System.Drawing.Point(520, 40);
             this.label3.Margin = new System.Windows.Forms.Padding(40, 20, 0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 21);
+            this.label3.Size = new System.Drawing.Size(90, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "Agenda ";
             // 
@@ -155,10 +155,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(414, 37);
+            this.label2.Location = new System.Drawing.Point(414, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(40, 20, 0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 21);
+            this.label2.Size = new System.Drawing.Size(122, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Abordagem";
             // 
@@ -169,10 +169,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(352, 37);
+            this.label1.Location = new System.Drawing.Point(352, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(40, 20, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 21);
+            this.label1.Size = new System.Drawing.Size(68, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Home";
             // 
@@ -200,7 +200,7 @@
             this.btnNovoCliente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovoCliente.ForeColor = System.Drawing.Color.White;
             this.btnNovoCliente.Location = new System.Drawing.Point(301, 389);
-            this.btnNovoCliente.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.btnNovoCliente.Margin = new System.Windows.Forms.Padding(0);
             this.btnNovoCliente.Name = "btnNovoCliente";
             this.btnNovoCliente.Size = new System.Drawing.Size(149, 42);
             this.btnNovoCliente.TabIndex = 6;
@@ -214,10 +214,10 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(87, 90);
+            this.label7.Location = new System.Drawing.Point(40, 90);
             this.label7.Margin = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(321, 39);
+            this.label7.Size = new System.Drawing.Size(445, 39);
             this.label7.TabIndex = 9;
             this.label7.Text = "Fluxo de Usuários";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -245,10 +245,10 @@
             this.tbCadastro.Controls.Add(this.txtNomeCompleto);
             this.tbCadastro.Controls.Add(this.lblNomeCompleto);
             this.tbCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCadastro.Location = new System.Drawing.Point(4, 22);
+            this.tbCadastro.Location = new System.Drawing.Point(4, 25);
             this.tbCadastro.Name = "tbCadastro";
             this.tbCadastro.Padding = new System.Windows.Forms.Padding(3);
-            this.tbCadastro.Size = new System.Drawing.Size(802, 210);
+            this.tbCadastro.Size = new System.Drawing.Size(802, 207);
             this.tbCadastro.TabIndex = 0;
             this.tbCadastro.Text = "Dados de Clientes";
             this.tbCadastro.UseVisualStyleBackColor = true;
@@ -258,7 +258,7 @@
             this.txtCPF.Location = new System.Drawing.Point(143, 139);
             this.txtCPF.Mask = "###,###,###-##";
             this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(124, 26);
+            this.txtCPF.Size = new System.Drawing.Size(124, 30);
             this.txtCPF.TabIndex = 7;
             // 
             // lblCPF
@@ -268,7 +268,7 @@
             this.lblCPF.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.lblCPF.Location = new System.Drawing.Point(61, 142);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(47, 21);
+            this.lblCPF.Size = new System.Drawing.Size(58, 28);
             this.lblCPF.TabIndex = 6;
             this.lblCPF.Text = "Hora";
             // 
@@ -276,7 +276,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(143, 99);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(367, 26);
+            this.txtEmail.Size = new System.Drawing.Size(367, 30);
             this.txtEmail.TabIndex = 5;
             // 
             // lblemail
@@ -286,7 +286,7 @@
             this.lblemail.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.lblemail.Location = new System.Drawing.Point(59, 101);
             this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(46, 21);
+            this.lblemail.Size = new System.Drawing.Size(57, 28);
             this.lblemail.TabIndex = 4;
             this.lblemail.Text = "Data";
             // 
@@ -294,7 +294,7 @@
             // 
             this.txtNomeSocial.Location = new System.Drawing.Point(143, 61);
             this.txtNomeSocial.Name = "txtNomeSocial";
-            this.txtNomeSocial.Size = new System.Drawing.Size(367, 26);
+            this.txtNomeSocial.Size = new System.Drawing.Size(367, 30);
             this.txtNomeSocial.TabIndex = 3;
             // 
             // lblNomeSocial
@@ -304,7 +304,7 @@
             this.lblNomeSocial.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.lblNomeSocial.Location = new System.Drawing.Point(28, 61);
             this.lblNomeSocial.Name = "lblNomeSocial";
-            this.lblNomeSocial.Size = new System.Drawing.Size(103, 21);
+            this.lblNomeSocial.Size = new System.Drawing.Size(128, 28);
             this.lblNomeSocial.TabIndex = 2;
             this.lblNomeSocial.Text = "Participante";
             // 
@@ -312,7 +312,7 @@
             // 
             this.txtNomeCompleto.Location = new System.Drawing.Point(143, 22);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
-            this.txtNomeCompleto.Size = new System.Drawing.Size(367, 26);
+            this.txtNomeCompleto.Size = new System.Drawing.Size(367, 30);
             this.txtNomeCompleto.TabIndex = 1;
             // 
             // lblNomeCompleto
@@ -322,7 +322,7 @@
             this.lblNomeCompleto.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.lblNomeCompleto.Location = new System.Drawing.Point(59, 22);
             this.lblNomeCompleto.Name = "lblNomeCompleto";
-            this.lblNomeCompleto.Size = new System.Drawing.Size(51, 21);
+            this.lblNomeCompleto.Size = new System.Drawing.Size(62, 28);
             this.lblNomeCompleto.TabIndex = 0;
             this.lblNomeCompleto.Text = "Tema";
             // 
@@ -331,10 +331,10 @@
             this.tbConsulta.Controls.Add(this.lstCliente);
             this.tbConsulta.Controls.Add(this.btnPesquisar);
             this.tbConsulta.Controls.Add(this.txtBuscar);
-            this.tbConsulta.Location = new System.Drawing.Point(4, 22);
+            this.tbConsulta.Location = new System.Drawing.Point(4, 25);
             this.tbConsulta.Name = "tbConsulta";
             this.tbConsulta.Padding = new System.Windows.Forms.Padding(3);
-            this.tbConsulta.Size = new System.Drawing.Size(802, 210);
+            this.tbConsulta.Size = new System.Drawing.Size(802, 207);
             this.tbConsulta.TabIndex = 1;
             this.tbConsulta.Text = "Consulta";
             this.tbConsulta.UseVisualStyleBackColor = true;
@@ -365,7 +365,7 @@
             // 
             this.txtBuscar.Location = new System.Drawing.Point(11, 18);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(155, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(155, 22);
             this.txtBuscar.TabIndex = 1;
             // 
             // frmCadastrodeClientes

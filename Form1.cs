@@ -18,7 +18,7 @@ namespace CrudCreateConexus
     {
         //Conexão com o banco de dados MySQL
         MySqlConnection Conexao;
-        string data_source = "datasource=localhost; username=root; password=; database=db_conexusfluxo";
+        string data_source = "datasource=localhost; username=root; password=; database=db_cadastro";
 
         private int ?codigo_cliente = null;
 
