@@ -14,18 +14,18 @@ namespace CRUD
     public partial class frmCadastrodeClientes : Form
     {
 
-       //Conexão Com o banco de dados MySql
+        //Conexão Com o banco de dados MySql
 
         MySqlConnection Conexao;
-        string data_source = "datasource=localhost; username=root; password=; database=db_cadastro";
+        string data_source = "datasource=localhost; username=root; password=; database=db_clientes";
 
-        private int ?codigo_cliente = null;
+        private int? codigo_cliente = null;
 
         public frmCadastrodeClientes()
         {
             InitializeComponent();
 
-           //Configuração Inicial do lIstview para exibição do dados de cliente
+            //Configuração Inicial do lIstview para exibição do dados de cliente
 
             lstCliente.View = View.Details;                 // Define a visualização como detalhes
             lstCliente.LabelEdit = true;                   // Permite a edição dos rótulos
@@ -33,7 +33,7 @@ namespace CRUD
             lstCliente.FullRowSelect = true;             // Seleciona a linha inteira ao clicar
             lstCliente.GridLines = true;                // Exibe linhas de grade
 
-           // Definindo as colunas da listview
+            // Definindo as colunas da listview
 
             lstCliente.Columns.Add("Codigo", 100, HorizontalAlignment.Left); //Coluna de Código
             lstCliente.Columns.Add("Nome Completo", 200, HorizontalAlignment.Left); //Coluna de Nome
@@ -77,7 +77,7 @@ namespace CRUD
 
                 // Preenche a Listview com os dados do cliente
 
-                while (reader.Read()) 
+                while (reader.Read())
                 {
                     // Cria uma linha para cada clientes com os dados retornados da consulta
                     string[] row =
@@ -126,7 +126,7 @@ namespace CRUD
         }
 
         // Método para carregar todos os clientes no ListView (usando uma consulta sem parâmetros)
-        private void carregar_cliente() 
+        private void carregar_cliente()
         {
             string query = "SELECT * FROM dadosdocliente ORDER BY idcliente DESC";
             carregar_clientes_com_query(query);
@@ -201,7 +201,7 @@ namespace CRUD
                                      MessageBoxButtons.OK,
                                      MessageBoxIcon.Information);
                 }
-                else 
+                else
                 {
                     // Update
 
@@ -235,20 +235,14 @@ namespace CRUD
                 }
 
                 codigo_cliente = null;
-                 
+
                 // LImpa os campos após o sucesso
 
-                txtNomeCompleto.Text= String.Empty;
-                txtNomeSocial.Text = " ";
-                txtEmail.Text = " ";
-                txtCPF.Text = " ";
+                limpar_formulario();
 
                 // Recarrega os clientes no ListView
 
                 carregar_cliente();
-
-                // MUda para a aba de pesquisa
-                tbControl.SelectedIndex = 1;
 
             }
             catch (MySqlException ex)
@@ -268,7 +262,7 @@ namespace CRUD
                                 "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            finally 
+            finally
             {
                 //Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
 
@@ -279,7 +273,6 @@ namespace CRUD
 
             }
         }
-
 
 
         // Função para validar o comprimento e formato de CPF
@@ -305,7 +298,7 @@ namespace CRUD
         {
             ListView.SelectedListViewItemCollection clientesdaselecao = lstCliente.SelectedItems;
 
-            foreach (ListViewItem item in clientesdaselecao) 
+            foreach (ListViewItem item in clientesdaselecao)
             {
                 codigo_cliente = Convert.ToInt32(item.SubItems[0].Text);
 
@@ -318,10 +311,91 @@ namespace CRUD
                 txtNomeSocial.Text = item.SubItems[2].Text;
                 txtEmail.Text = item.SubItems[3].Text;
                 txtCPF.Text = item.SubItems[4].Text;
+
+                btnExcluirCliente.Visible = true;
             }
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
+        {
+            limpar_formulario();
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            excluir_cliente();
+        }
+
+        private void btnExcluirCliente_Click(object sender, EventArgs e)
+        {
+            excluir_cliente();
+        }
+
+        private void excluir_cliente()
+        {
+            try
+            {
+                DialogResult opcaodigitada = MessageBox.Show("Tem certeza que deseja excluir o registro?" + codigo_cliente,
+                                  "Tem certeza?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (opcaodigitada == DialogResult.Yes)
+                {
+
+                    Conexao = new MySqlConnection(data_source);
+                    Conexao.Open();
+
+                    MySqlCommand cmd = new MySqlCommand();
+
+                    cmd.Connection = Conexao;
+
+                    cmd.Prepare();
+
+                    cmd.CommandText = "DELETE FROM dadosdocliente WHERE idcliente = @codigo";
+
+                    cmd.Parameters.AddWithValue("@codigo", codigo_cliente);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Os dados do cliente foram EXCLUÍDOS!",
+                                    "Sucesso",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+
+                    limpar_formulario();
+
+                    // MUda para a aba de pesquisa
+                    tbControl.SelectedIndex = 1;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Trata Erros relacionados ao Mysql
+
+                MessageBox.Show("Erro" + ex.Number + " ocorreu: " + ex.Message,
+                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            catch (Exception ex)
+            {
+
+                // Trata erros de outros tipos não relacioanados ao Database
+
+                MessageBox.Show("Ocorreu: " + ex.Message,
+                                "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            finally
+            {
+                //Garante que a conexão com o banco será fechada, mesmo se ocorrer erro
+
+                if (Conexao != null && Conexao.State == ConnectionState.Open)
+                {
+                    Conexao.Close();
+                }
+            }
+        }
+
+        private void limpar_formulario()
         {
             codigo_cliente = null;
 
@@ -334,6 +408,7 @@ namespace CRUD
 
             txtNomeCompleto.Focus();
 
+            btnExcluirCliente.Visible = false;
         }
     }
 }

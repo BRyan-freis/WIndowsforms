@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastrodeClientes));
             this.tbControl = new System.Windows.Forms.TabControl();
             this.tbCadastro = new System.Windows.Forms.TabPage();
@@ -41,15 +42,19 @@
             this.lblNomeCompleto = new System.Windows.Forms.Label();
             this.tbConsulta = new System.Windows.Forms.TabPage();
             this.lstCliente = new System.Windows.Forms.ListView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.lblTítulo = new System.Windows.Forms.Label();
-            this.gradientSideBarPanel1 = new CRUD.GradientSideBarPanel();
             this.btnNovoCliente = new System.Windows.Forms.Button();
+            this.btnExcluirCliente = new System.Windows.Forms.Button();
+            this.gradientSideBarPanel1 = new CRUD.GradientSideBarPanel();
+            this.lblTítulo = new System.Windows.Forms.Label();
             this.tbControl.SuspendLayout();
             this.tbCadastro.SuspendLayout();
             this.tbConsulta.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.gradientSideBarPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +89,7 @@
             // 
             // txtCPF
             // 
-            this.txtCPF.Location = new System.Drawing.Point(306, 160);
+            this.txtCPF.Location = new System.Drawing.Point(313, 182);
             this.txtCPF.Mask = "###,###,###-##";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(127, 26);
@@ -95,7 +100,7 @@
             this.lblCPF.AutoSize = true;
             this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPF.ForeColor = System.Drawing.Color.Black;
-            this.lblCPF.Location = new System.Drawing.Point(193, 160);
+            this.lblCPF.Location = new System.Drawing.Point(200, 182);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(48, 20);
             this.lblCPF.TabIndex = 6;
@@ -103,7 +108,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(306, 124);
+            this.txtEmail.Location = new System.Drawing.Point(313, 146);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(285, 26);
             this.txtEmail.TabIndex = 5;
@@ -113,7 +118,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(187, 124);
+            this.lblEmail.Location = new System.Drawing.Point(194, 146);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(64, 20);
             this.lblEmail.TabIndex = 4;
@@ -121,7 +126,7 @@
             // 
             // txtNomeSocial
             // 
-            this.txtNomeSocial.Location = new System.Drawing.Point(306, 85);
+            this.txtNomeSocial.Location = new System.Drawing.Point(313, 107);
             this.txtNomeSocial.Name = "txtNomeSocial";
             this.txtNomeSocial.Size = new System.Drawing.Size(285, 26);
             this.txtNomeSocial.TabIndex = 3;
@@ -131,7 +136,7 @@
             this.lblNomeSocial.AutoSize = true;
             this.lblNomeSocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeSocial.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeSocial.Location = new System.Drawing.Point(165, 85);
+            this.lblNomeSocial.Location = new System.Drawing.Point(172, 107);
             this.lblNomeSocial.Name = "lblNomeSocial";
             this.lblNomeSocial.Size = new System.Drawing.Size(114, 20);
             this.lblNomeSocial.TabIndex = 2;
@@ -139,7 +144,7 @@
             // 
             // txtNomeCompleto
             // 
-            this.txtNomeCompleto.Location = new System.Drawing.Point(307, 47);
+            this.txtNomeCompleto.Location = new System.Drawing.Point(314, 69);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
             this.txtNomeCompleto.Size = new System.Drawing.Size(285, 26);
             this.txtNomeCompleto.TabIndex = 1;
@@ -149,7 +154,7 @@
             this.lblNomeCompleto.AutoSize = true;
             this.lblNomeCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeCompleto.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeCompleto.Location = new System.Drawing.Point(155, 49);
+            this.lblNomeCompleto.Location = new System.Drawing.Point(162, 71);
             this.lblNomeCompleto.Name = "lblNomeCompleto";
             this.lblNomeCompleto.Size = new System.Drawing.Size(138, 20);
             this.lblNomeCompleto.TabIndex = 0;
@@ -170,6 +175,7 @@
             // 
             // lstCliente
             // 
+            this.lstCliente.ContextMenuStrip = this.contextMenuStrip1;
             this.lstCliente.HideSelection = false;
             this.lstCliente.Location = new System.Drawing.Point(6, 77);
             this.lstCliente.MultiSelect = false;
@@ -179,12 +185,26 @@
             this.lstCliente.UseCompatibleStateImageBehavior = false;
             this.lstCliente.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lstCliente_ItemSelectionChanged);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(154, 26);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.toolStripMenuItem1.Text = "Excluir Clientes";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
             // btnPesquisar
             // 
             this.btnPesquisar.BackColor = System.Drawing.Color.Teal;
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.ForeColor = System.Drawing.Color.White;
-            this.btnPesquisar.Location = new System.Drawing.Point(242, 16);
+            this.btnPesquisar.Location = new System.Drawing.Point(422, 16);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(116, 42);
             this.btnPesquisar.TabIndex = 1;
@@ -194,7 +214,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(25, 24);
+            this.txtBuscar.Location = new System.Drawing.Point(205, 24);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(209, 26);
             this.txtBuscar.TabIndex = 0;
@@ -204,7 +224,7 @@
             this.btnSalvar.BackColor = System.Drawing.Color.Teal;
             this.btnSalvar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(174, 409);
+            this.btnSalvar.Location = new System.Drawing.Point(352, 409);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(101, 44);
             this.btnSalvar.TabIndex = 8;
@@ -212,17 +232,34 @@
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // lblTítulo
+            // btnNovoCliente
             // 
-            this.lblTítulo.AutoSize = true;
-            this.lblTítulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTítulo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTítulo.ForeColor = System.Drawing.Color.White;
-            this.lblTítulo.Location = new System.Drawing.Point(36, 40);
-            this.lblTítulo.Name = "lblTítulo";
-            this.lblTítulo.Size = new System.Drawing.Size(224, 25);
-            this.lblTítulo.TabIndex = 0;
-            this.lblTítulo.Text = "Cadastro de Clientes";
+            this.btnNovoCliente.BackColor = System.Drawing.Color.Teal;
+            this.btnNovoCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovoCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnNovoCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnNovoCliente.Image")));
+            this.btnNovoCliente.Location = new System.Drawing.Point(197, 409);
+            this.btnNovoCliente.Name = "btnNovoCliente";
+            this.btnNovoCliente.Size = new System.Drawing.Size(147, 44);
+            this.btnNovoCliente.TabIndex = 10;
+            this.btnNovoCliente.Text = "Novo Cadastro\r\n";
+            this.btnNovoCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnNovoCliente.UseVisualStyleBackColor = false;
+            this.btnNovoCliente.Click += new System.EventHandler(this.btnNovoCliente_Click);
+            // 
+            // btnExcluirCliente
+            // 
+            this.btnExcluirCliente.BackColor = System.Drawing.Color.Teal;
+            this.btnExcluirCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirCliente.ForeColor = System.Drawing.Color.White;
+            this.btnExcluirCliente.Location = new System.Drawing.Point(465, 412);
+            this.btnExcluirCliente.Name = "btnExcluirCliente";
+            this.btnExcluirCliente.Size = new System.Drawing.Size(85, 41);
+            this.btnExcluirCliente.TabIndex = 11;
+            this.btnExcluirCliente.Text = "Excluir";
+            this.btnExcluirCliente.UseVisualStyleBackColor = false;
+            this.btnExcluirCliente.Visible = false;
+            this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
             // 
             // gradientSideBarPanel1
             // 
@@ -235,26 +272,24 @@
             this.gradientSideBarPanel1.Size = new System.Drawing.Size(816, 100);
             this.gradientSideBarPanel1.TabIndex = 9;
             // 
-            // btnNovoCliente
+            // lblTítulo
             // 
-            this.btnNovoCliente.BackColor = System.Drawing.Color.Teal;
-            this.btnNovoCliente.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovoCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnNovoCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnNovoCliente.Image")));
-            this.btnNovoCliente.Location = new System.Drawing.Point(19, 409);
-            this.btnNovoCliente.Name = "btnNovoCliente";
-            this.btnNovoCliente.Size = new System.Drawing.Size(147, 44);
-            this.btnNovoCliente.TabIndex = 10;
-            this.btnNovoCliente.Text = "Novo Cadastro\r\n";
-            this.btnNovoCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnNovoCliente.UseVisualStyleBackColor = false;
-            this.btnNovoCliente.Click += new System.EventHandler(this.btnNovoCliente_Click);
+            this.lblTítulo.AutoSize = true;
+            this.lblTítulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTítulo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTítulo.ForeColor = System.Drawing.Color.White;
+            this.lblTítulo.Location = new System.Drawing.Point(287, 40);
+            this.lblTítulo.Name = "lblTítulo";
+            this.lblTítulo.Size = new System.Drawing.Size(224, 25);
+            this.lblTítulo.TabIndex = 0;
+            this.lblTítulo.Text = "Cadastro de Clientes";
             // 
             // frmCadastrodeClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 465);
+            this.Controls.Add(this.btnExcluirCliente);
             this.Controls.Add(this.btnNovoCliente);
             this.Controls.Add(this.gradientSideBarPanel1);
             this.Controls.Add(this.btnSalvar);
@@ -267,6 +302,7 @@
             this.tbCadastro.PerformLayout();
             this.tbConsulta.ResumeLayout(false);
             this.tbConsulta.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.gradientSideBarPanel1.ResumeLayout(false);
             this.gradientSideBarPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -292,6 +328,9 @@
         private System.Windows.Forms.Label lblTítulo;
         private GradientSideBarPanel gradientSideBarPanel1;
         private System.Windows.Forms.Button btnNovoCliente;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Button btnExcluirCliente;
     }
 }
 
